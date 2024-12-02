@@ -7,7 +7,8 @@
         "prettify": "prettier -l --write \"**/*.js\"",
         "test": "jest",
         "dev": "nodemon --inspect=0.0.0.0:9229 -L src/index.js",
-        "docker:test": "docker build -t node-docker-image-test --progress=plain --no-cache --target test ."
+        "docker:test": "docker build -t node-docker-image-test --progress=plain --no-cache --target test .",
+        "push": "node git-script --add=. --commit=\"Update\" --push=\"origin main\""
     },
     "dependencies": {
         "express": "^4.18.2",
